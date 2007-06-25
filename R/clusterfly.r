@@ -32,7 +32,7 @@ clusterfly <- function(df, rescale=TRUE) {
 	structure(list(
 		df = df, 
 		clusters = list(), 
-		ggobi = getg,
+		ggobi = getg
 	), class="clusterfly")
 }
 

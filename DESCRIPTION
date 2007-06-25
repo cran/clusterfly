@@ -1,7 +1,7 @@
 Package: clusterfly
 Type: Package
 Title: Explore clustering interactively using R and GGobi
-Version: 0.2.1
+Version: 0.2.2
 Date: 2007-06-25
 Author: Hadley Wickham <h.wickham@gmail.com>
 Maintainer: Hadley Wickham <h.wickham@gmail.com>
@@ -10,4 +10,4 @@ Depends: rggobi, ggplot2, e1071, cluster
 Suggests: som, mclust
 License: MIT
 LazyData: true
-Packaged: Mon Jun 25 12:55:59 2007; hadley
+Packaged: Thu Jun 28 09:51:03 2007; hadley
