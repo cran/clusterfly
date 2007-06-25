@@ -24,7 +24,7 @@ ellipse <- function(data, npoints=1000, cl=0.95, mean=colMeans(data), cov=var(da
 	cntr <- t(apply(sphere, 1, norm.vec))
 
 	cntr <- cntr %*% diag(sqrt(ev$values)) %*% t(ev$vectors)
-	cntr <- cntr * sqrt(p * (df-1) * qf(cl, p, df-p) / (n * (df-p)))
+	cntr <- cntr * sqrt(p * (df-1) * qf(cl, p, df-p) / (df * (df-p)))
 	if (!missing(data)) colnames(cntr) <- colnames(data)
 
 	cntr + rep(mean, each=npoints) 

@@ -1,4 +1,4 @@
-# Visualise Kohonen self organising map with GGobi
+# Visualise Kohonen self organising maps with GGobi
 # Displays both data, and map in original high-d space.
 # 
 # Map variables added as map1 and map2.  Plot these to 
@@ -8,7 +8,7 @@
 # @arguments SOM object
 # @keyword cluster
 # @keyword dynamic
-#X if (!is.null(nsl("cran.r-project.org")) && require("som")) {
+#X \dontrun{
 #X d.music <- read.csv("http://www.ggobi.org/book/data/music-all.csv")
 #X 
 #X music <- rescaler(d.music)[complete.cases(d.music), 1:10]

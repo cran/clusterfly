@@ -1,6 +1,6 @@
 \name{ggobi.som}
 \alias{ggobi.som}
-\title{Visualise Kohonen self organising map with GGobi}
+\title{Visualise Kohonen self organising maps with GGobi}
 \author{Hadley Wickham <h.wickham@gmail.com>}
 
 \description{
@@ -16,7 +16,7 @@ Displays both data, and map in original high-d space.
 get traditional SOM plot.  Tour over all other variables to
 see how well the map fits the original data.}
 
-\examples{if (!is.null(nsl("cran.r-project.org")) && require("som")) {
+\examples{\dontrun{
 d.music <- read.csv("http://www.ggobi.org/book/data/music-all.csv")
 
 music <- rescaler(d.music)[complete.cases(d.music), 1:10]
