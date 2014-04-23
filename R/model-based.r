@@ -1,7 +1,7 @@
 #' Display model based clustering with mvn ellipses.
 #' Displays the results of model based clustering with an ellipse drawn from
 #' the multivariate normal model for each group.
-#' 
+#'
 #' @param model output from me function
 #' @param data input data frame to me
 #' @keywords cluster dynamic
@@ -15,11 +15,12 @@
 #' mefly(vvi, iris[,-5])
 #' mefly(vvv, iris[,-5])
 #' }
+#' @importFrom plyr rbind.fill
 mefly <- function(model, data) {
   mean <- model$parameters$mean
   var <- model$parameters$variance$sigma
 
-  ellipses <- do.call("rbind", lapply(1:ncol(mean), function(i) { 
+  ellipses <- do.call("rbind", lapply(1:ncol(mean), function(i) {
     data.frame(ellipse(mean = mean[,i], cov = var[,, i], df=10), cluster=i)
   }))
   colnames(ellipses) <- c(colnames(data), "cluster")
